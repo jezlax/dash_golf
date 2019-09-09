@@ -244,6 +244,4 @@ def callback_radar(_,selected_player):
 
 
 if __name__ == "__main__":
-    server = app.server
-    app.layout = layout()
     app.run_server()
