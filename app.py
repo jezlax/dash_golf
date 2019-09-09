@@ -18,7 +18,7 @@ VALID_USERNAME_PASSWORD_PAIRS = {
     'callaway': 'epic'
 }
 
-app = dash.Dash(__name__, server=server, external_stylesheets=EXTERNAL_STYLESHEETS)
+app = dash.Dash(__name__, external_stylesheets=EXTERNAL_STYLESHEETS)
 server = app.server
 auth = dash_auth.BasicAuth(
     app,
