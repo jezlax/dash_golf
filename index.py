@@ -12,11 +12,6 @@ from charts import *
 df = pd.read_csv('./assets/data.csv')
 playerlist = df['PLAYER NAME'].unique().tolist()
 
-# Keep this out of source code repository - save in a file or a database
-VALID_USERNAME_PASSWORD_PAIRS = {
-    'callaway': 'epic'
-}
-
 def player_suggestions():
     return html.Datalist(
         id="player-list",
