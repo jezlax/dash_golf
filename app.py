@@ -8,7 +8,7 @@ import dash_auth
 import os
 from random import randint
 import plotly
-from plotly.graph_objs import *
+import plotly.graph_objs as go
 import pandas as pd
 from charts import *
 
