@@ -208,6 +208,9 @@ def get_player_ids_from_name(_,player):
 def slug_select(_,id):
     if id is None:
         return html.H2("Select a Player")
+    elif id == 1810:
+        return [html.Img(src="https://pga-tour-res.cloudinary.com/image/upload/c_fill,d_headshots_default.png,f_auto,g_face:center,h_350,q_auto,w_280/headshots_01810.png",
+                         style={"height":"275px"})]
     else:
         return [html.Img(src="https://pga-tour-res.cloudinary.com/image/upload/c_fill,d_headshots_default.png,f_auto,g_face:center,h_350,q_auto,w_280/headshots_{}.png".format(id),
                          style={"height":"275px"})]
