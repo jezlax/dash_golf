@@ -169,8 +169,7 @@ header = html.Div(
             }
 )
 
-def layout():
-    return html.Div(
+app.layout = html.Div(
             children=[
                 html.Div(
                 children=[header,body],
@@ -272,6 +271,5 @@ def callback_radar(_,selected_player):
 
 # Run the Dash app
 if __name__ == '__main__':
-    app.layout = layout()
     app.server.run(debug=True, threaded=True)
     
