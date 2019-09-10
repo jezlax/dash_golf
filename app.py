@@ -43,7 +43,7 @@ auth = dash_auth.BasicAuth(
     VALID_USERNAME_PASSWORD_PAIRS
 )
 app.config.suppress_callback_exceptions = True
-
+app.title = 'Callaway Analytics'
 #### CODE TO BUILD THE APP #### 
 
 df = pd.read_csv('./assets/data.csv')
