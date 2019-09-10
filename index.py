@@ -132,16 +132,6 @@ header = html.Div(
             }
 )
 
-
-def layout():
-    return html.Div(
-                style = {"width":"1300px",
-                         "margin-left":"auto",
-                         "margin-right":"auto",
-                         },
-                children=[header,body]
-                )
-
 def layout():
     return html.Div(
             children=[
