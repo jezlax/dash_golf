@@ -44,7 +44,7 @@ auth = dash_auth.BasicAuth(
 )
 app.config.suppress_callback_exceptions = True
 app.title = 'Callaway Analytics'
-#### CODE TO BUILD THE APP #### 
+#### CODE TO BUILD THE APP ####
 
 df = pd.read_csv('./assets/data.csv')
 playerlist = df['PLAYER NAME'].unique().tolist()
@@ -272,4 +272,3 @@ def callback_radar(_,selected_player):
 # Run the Dash app
 if __name__ == '__main__':
     app.server.run(debug=True, threaded=True)
-    

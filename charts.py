@@ -92,7 +92,7 @@ def get_line(playername):
     x = df[(df['PLAYER NAME'] == playername)]
     title = 'Strokes Gained by Season'
     labels = ['OTT','APP','ATG','PUTT']
-    colors = ['rgb(67,67,67)', 'rgb(115,115,115)', 'rgb(49,130,189)', 'rgb(189,189,189)']
+    colors = ['rgb(49,130,189)', 'rgb(115,115,115)', 'rgb(255,127,80)', 'rgb(34,139,34)']
 
     ottrk = x['sg_ott_rk'].values.tolist()
     apprk = x['sg_app_rk'].values.tolist()
