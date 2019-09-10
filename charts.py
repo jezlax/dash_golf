@@ -91,7 +91,7 @@ def get_radar(playername):
 def get_line(playername):
     x = df[(df['PLAYER NAME'] == playername)]
     title = 'Strokes Gained by Season'
-    labels = ['OFF','APP','ATG','PUTT']
+    labels = ['OTT','APP','ATG','PUTT']
     colors = ['rgb(67,67,67)', 'rgb(115,115,115)', 'rgb(49,130,189)', 'rgb(189,189,189)']
 
     ottrk = x['sg_ott_rk'].values.tolist()
