@@ -7,7 +7,7 @@ import flask
 import dash_auth
 import os
 from random import randint
-import plotly.plotly as py
+import plotly
 from plotly.graph_objs import *
 import pandas as pd
 from charts import *
