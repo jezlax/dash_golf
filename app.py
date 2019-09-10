@@ -36,7 +36,7 @@ VALID_USERNAME_PASSWORD_PAIRS = {
 server = flask.Flask(__name__)
 server.secret_key = os.environ.get('secret_key', str(randint(0, 1000000)))
 
-app = dash.Dash(__name__, server=server external_stylesheets=EXTERNAL_STYLESHEETS)
+app = dash.Dash(__name__, server=server, external_stylesheets=EXTERNAL_STYLESHEETS)
 server = app.server
 auth = dash_auth.BasicAuth(
     app,
